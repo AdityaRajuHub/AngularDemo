@@ -1,0 +1,18 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+        <button class="btn btn-info" (click)= "navButtonClick('goBack')">Back</button>
+    </div>
+    <div class="card-body">
+      You clicked {{id}}
+      <div class="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. At dignissimos velit ex sapiente cumque, voluptatibus, deleniti soluta unde corporis commodi illum iure doloribus necessitatibus assumenda, fugiat rem ipsa ut fuga?
+        <div class="40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut quam doloribus odio! Quia aperiam velit rem, deserunt quidem sapiente ut dolorem deleniti placeat qui. Beatae dolorem esse sapiente praesentium?</div>
+        <div class="100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe iusto eius ea suscipit aut illum explicabo qui modi debitis recusandae fugiat fugit reiciendis aperiam veritatis quia dolorem facilis, eaque tenetur.</div>
+      </div>
+  </div>
+  <div class="card-footer">
+      <div class="float-left"><a class="btn" [class.disabled]="!prevLinkEnabled" [routerLink]="" (click)="prev()">Prev</a></div>
+        <div class="float-right"><a class="btn" [class.disabled]="!nextLinkEnabled" [routerLink]="" (click)="next()">Next</a></div>
+    </div>
+  
+</div>

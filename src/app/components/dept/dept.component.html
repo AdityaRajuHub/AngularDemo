@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-5">
+      <div class="list-group mt-5 mr-5">
+        <li (click)="onSelect(dept)" *ngFor="let dept of depts" class="list-group-item list-group-item-action"
+          [class.active]="dept.id==selId">
+          <span class="badge">{{dept.id}}</span>{{dept.name}}
+        </li>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-7">
+      <div class="card mt-5 mr-5">
+        <div class="card-body" id="tabContent" *ngIf="tabContent">
+          <div>
+            {{tabContent}}
+          </div>
+          <div>
+            <a [routerLink]="" (click)="onMore()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
