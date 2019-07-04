@@ -4,7 +4,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-dept',
   templateUrl: './dept.component.html',
-  styleUrls: ['./dept.component.css']
+  styleUrls: []
 })
 export class DeptComponent implements OnInit, OnChanges {
   

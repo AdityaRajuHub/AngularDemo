@@ -6,7 +6,7 @@ import { TopicService } from 'src/app/topic.service';
 @Component({
   selector: 'app-dept-detail',
   templateUrl: './dept-detail.component.html',
-  styleUrls: ['./dept-detail.component.css']
+  styleUrls: []
 })
 export class DeptDetailComponent implements OnInit {
   public id: number;
